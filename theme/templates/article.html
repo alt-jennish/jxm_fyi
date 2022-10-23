@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} &bull; {{ SITENAME }}{% endblock %}
+
+{% block body %}{{ article.slug }}{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+{% if article.summary %}
+    <meta name="description" content="{{ article.summary|striptags }}">
+{% endif %}
+
+{% for tag in article.tags %}
+    <meta name="tags" content="{{ tag }}">
+{% endfor %}
+
+{% for item in article.metadata %}
+    {% if item != 'tags' %}
+    <meta name="{{ item }}" content="{{ article[item]|striptags }}">
+    {% endif %}
+{% endfor %}
+
+{% endblock %}
+
+{% block content %}
+<section class="article">
+    <article class="content">
+        <h1>{{ article.title }}</h1>
+        {{ article.content }}
+    </article>
+</section>
+{% endblock %}

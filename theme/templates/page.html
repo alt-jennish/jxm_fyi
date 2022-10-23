@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page.title }} &bull; {{ SITENAME }}{% endblock %}
+
+{% block body %}{{ page.slug|lower() }}{% endblock %}
+
+{% block content %}
+<article class="content page">
+   {{ page.content }} 
+</article><!-- /.content -->
+{% endblock %}

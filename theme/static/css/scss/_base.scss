@@ -1,0 +1,27 @@
+/* Base Styles
+  ~-----------------------------------------------------------------------~ */
+
+body, html {
+    background: $background;
+    color: $foreground;
+    font-size: 1em;
+    font-family: "Lora", serif;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: $secondary;
+    color: darken($primary, 50%);
+
+}
+
+::-moz-selection {
+    background: $secondary;
+    color: darken($primary, 50%);
+}
+

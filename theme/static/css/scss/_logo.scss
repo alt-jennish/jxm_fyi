@@ -1,0 +1,25 @@
+/* Logo
+  ~---------------------------------------------------------------~ */
+
+.mainLogo {
+    path {
+        fill: $insects;
+        transition: all 350ms;
+    }
+
+    .heart {
+        stroke-width: 4;
+        fill: rgba(255, 255, 255, 0);
+        stroke: $ohmu;
+    }
+}
+
+.mainLogo:hover {
+    path {
+        fill: lighten($insects, 10%);
+    }
+
+    .heart {
+        fill: $ohmu;
+    }
+}

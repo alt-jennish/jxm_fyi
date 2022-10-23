@@ -1,0 +1,42 @@
+/* Footer
+  ~-------------------------------------------------------------------~ */
+
+#main-footer {
+    background: darken($primary, 35%);
+    color: white;
+    padding: 1em;
+
+    dl {
+        display: grid;
+        grid: {
+            template-columns: 0.6fr 1.6fr;
+            gap: 1em;
+        }
+        padding: 1em;
+
+        dt {
+            place-self: end;
+            align-self: end;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85em;
+        }
+
+        dd {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:link, a:visited {
+            color: $secondary;
+            transition: color 350ms;
+            text-decoration: none;
+            border-bottom: 0.0125em solid transparent;
+        }
+
+        a:hover, a:active, a:focus {
+            color: lighten($secondary, 25%);
+            border-bottom-color: $primary;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/* Intro Section
+  ~-----------------------------------------------------------------------~ */
+
+.intro {
+    padding: 3em 15vw;
+
+    .rule {
+        width: 5vw;
+        position: relative;
+        display: block;
+        margin: 2em auto 0;
+
+        svg {
+            .icon {
+                fill: $primary;
+            }
+        }
+
+        &:before, &:after {
+            position: absolute;
+            top: calc(50% - 0.05em);
+            width: 300%;
+            content: "\a0";
+            height: 0.05em;
+            background: $primary;
+        }
+
+        &:before {
+            margin-left: -300%;
+        }
+    }
+}
+
+.intro hgroup {
+    font-size: 0.85em;
+
+    h1 {
+        color: $primary;
+        margin-bottom: 0.25em;
+    }
+
+    h2 {
+        font-weight: 400;
+        margin-top: 0.25em;
+    }
+}
+
+@media (min-width: $medium) {
+    .intro {
+        padding: 5em 0;
+    }
+}

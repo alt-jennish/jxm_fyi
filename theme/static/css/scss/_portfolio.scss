@@ -1,0 +1,40 @@
+/* Portfolio
+  ~-----------------------------------------------------------------------~ */
+
+.portfolio {
+    margin: 0 0 3em;
+
+    .category-name {
+        text-align: center;
+        margin: 2em 0 1em;
+    }
+
+    a:link, a:visited {
+        border-bottom: none;
+    }
+}
+
+.portfolio-category {
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+    display: grid;
+    grid: {
+        template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+.portfolio-item {
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: $medium){
+    .portfolio-category {
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

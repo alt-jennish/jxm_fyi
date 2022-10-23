@@ -1,0 +1,46 @@
+/* Header
+  ~----------------------------------------------------------------------~ */
+
+.masthead {
+    background: lighten($primary, 25%);
+    display: grid;
+    grid: {
+        template-rows: 1fr;
+        template-columns: 1fr;
+    };
+    padding: 15% 35%;
+    align-items: center;
+    justify-content: center;
+    max-height: 65vw;
+    box-sizing: border-box;
+
+    svg {
+        max-width: 100%;
+        max-height: 100%;
+
+        .icon {
+            fill: $accent;
+        }
+
+        .type {
+            fill: darken($primary, 35%);
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: lighten($primary, 50%);
+        font-family: "Kaushan Script", cursive;
+    }
+
+    a:link {
+        border-bottom: none;
+        display: block;
+    }
+}
+
+@media (min-width: $medium) {
+    .masthead {
+        padding: 3% 35%;
+    }
+}

@@ -1,0 +1,27 @@
+/* Recent Posts
+  ~---------------------------------------------------------------~ */
+
+.recent-posts {
+   border-top: $inline-border;
+   border-bottom: $inline-border;
+   padding: 1.6em 0;
+}
+
+.recent-heading {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.recent-post-title {
+    font-size: 1.25em;
+    margin: 1em 0 0;
+}
+
+.recent-posts-list {
+    list-style: none;
+}
+
+.recent-post-meta {
+    font-size: 0.85em;
+    color: $lordyupa;
+}

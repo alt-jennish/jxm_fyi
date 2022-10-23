@@ -1,0 +1,23 @@
+// Variables
+// ~--------------------------------------------------------------~ //
+
+// Colors ~-------------------------------------------------------~ //
+
+$primary: rebeccapurple;
+$secondary: mediumturquoise;
+$accent: #ddacac;
+
+$background: #F8F1FF;
+$foreground: darken($primary, 30%);
+
+// $primary: #999;
+// $secondary: silver;
+
+// Ornamentation ~------------------------------------------------~ //
+
+$inline-border: 0.1rem dotted $secondary;
+
+// Breakpoints ~--------------------------------------------------~ //
+
+$small: 48rem;
+$medium: 64rem;

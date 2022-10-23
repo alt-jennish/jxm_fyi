@@ -1,0 +1,53 @@
+/* Resume
+  ~-----------------------------------------------------------------------~ */
+
+.resume {
+    .section {
+        font-size: 2em;
+    }
+
+    .skills {
+        font-size: 1.25em;
+    }
+
+    .date-range {
+        font-size: 0.85em;
+        margin: 3.2em 0 0.6em;
+    }
+
+    .job-title {
+        font-size: 1em;
+        margin: 0.6em 0;
+
+        em {
+            font-weight: 400;
+        }
+    }
+
+    .responsibilities {
+        font-size: 0.85em;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0.6em 0;
+
+        li {
+            text-indent: -0.5em;
+        }
+
+        li:before {
+            content: '\203a';
+            position: relative;
+            left: -0.5em;
+        }
+
+        ul {
+            padding-left: 1.6em;
+
+            li:before {
+              content: '\2212';
+            }
+        }
+    }
+}

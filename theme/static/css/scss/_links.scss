@@ -1,0 +1,14 @@
+/* Links
+  ~---------------------------------------------------------------~ */
+
+a:link, a:visited {
+    color: $valley;
+    text-decoration: none;
+    border-bottom: $inline-border;
+    transition: all 500ms;
+}
+
+a:hover, a:active, a:focus {
+    color: $nausicaa;
+    border-bottom-color: $lordyupa;
+}

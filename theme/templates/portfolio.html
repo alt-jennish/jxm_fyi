@@ -1,0 +1,17 @@
+<section class="portfolio">
+{% for category, article in categories %}
+
+<h2 class="category-name">{{ category.name }}</h2>
+
+<ol class="{{ category.name }} portfolio-category">
+    {% for a in article %}
+    <li class="portfolio-item">
+        <a href="{{ a.url }}">
+        <img class="preview" src="images/{{ a.image }}" alt="{{ a.summary|striptags }}" />
+        </a>
+    </li>
+    {% endfor %}
+</ol>
+
+{% endfor %}
+</section><!-- /.portfolio -->

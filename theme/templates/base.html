@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed">
+    {% endif %}
+    {% if FEED_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{%if FEED_ATOM_URL %}{{ FEED_ATOM_URL }}{% else %}{{ FEED_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
+    {% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/jenny.min.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ddacac">
+    <meta name="msapplication-TileColor" content="#f5f1e6">
+    <meta name="theme-color" content="#f5f1e6">
+
+    {% endblock head %}
+</head>
+
+<body class="{% block body %}home{% endblock %}">
+    {% include 'header.html' %}
+    <section id="content">
+        {% block content %}
+        {% endblock %}
+    </section><!-- #content -->
+    <footer id="main-footer">
+        {% block footer %}
+            {% include 'footer.html' %}
+        {% endblock %}
+    </footer>
+    <script src="{{ SITEURL }}/theme/javascript/main.js"></script>
+</body>
+</html>

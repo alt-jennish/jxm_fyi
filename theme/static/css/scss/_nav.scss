@@ -1,0 +1,28 @@
+/* Navigation
+  ~---------------------------------------------------------------~ */
+
+nav.pages {
+    margin-bottom: 1.6em;
+    
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-around;
+
+        li.current {
+            border-bottom: $inline-border;
+        }
+    }
+
+    a:link, a:visited {
+        font-size: 1.25em;
+        border-bottom: none;
+        color: $insects;
+    }
+
+    a:hover, a:active, a:focus {
+        color: darken($ohmu, 30%);
+    }
+}

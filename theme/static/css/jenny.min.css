@@ -1,0 +1,203 @@
+/*! BecomingJenny.org Styles Author: Jenny McBride Email: jenny@jxm.fyi */
+/* Base ~---------------------------------------------------------------~ */
+/* Base Styles ~-----------------------------------------------------------------------~ */
+body, html { background: #F8F1FF; color: #1a0d26; font-size: 1em; font-family: "Lora", serif; }
+
+body { box-sizing: border-box; padding: 0; margin: 0; }
+
+::selection { background: mediumturquoise; color: black; }
+
+::-moz-selection { background: mediumturquoise; color: black; }
+
+/* Typography ~-----------------------------------------------------------------~ */
+/* General ~------------------------------------------------------~ */
+body { font-size: 1em; font-family: "Alegreya", serif; }
+
+/* Headings ~-----------------------------------------------------~ */
+h1, h2, h3, h4, h5, h6 { color: #0d0613; }
+
+h1, h2, h3 { font-family: "Lora", serif; }
+
+h4, h5, h6 { font-family: "Lora", serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; }
+
+h1, h2 { margin: 0; letter-spacing: -0.05em; font-kerning: normal; word-spacing: -0.0125em; }
+
+h1 { font-size: 2em; margin: 1.8rem 0 1rem; }
+
+h2 { font-size: 1.6em; margin: 2.2rem 0 1rem; }
+
+h3 { font-size: 1.5em; margin: 2.3rem 0 1rem; }
+
+h4 { font-size: 1.35em; margin: 1.25rem 0 0.6rem; }
+
+h5 { font-size: 1.125em; margin: 1.475rem 0 0.6rem; }
+
+h6 { font-size: 1em; margin: 1.6rem 0 0.6rem; }
+
+/* Body Copy ~----------------------------------------------------~ */
+p { font-size: 1em; margin: 0 auto; line-height: 1.6; hanging-punctuation: first; }
+
+p + p { text-indent: 1em; position: relative; }
+
+p + p img { position: relative; left: -1em; }
+
+/* Ornamentation ~------------------------------------------------~ */
+hr { border: none; border-bottom: 0.1rem dotted mediumturquoise; margin: 1.6em 0; }
+
+/* Inline Elements ~----------------------------------------------~ */
+addr { border-bottom: 0.1rem dotted mediumturquoise; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; }
+
+mark { background: mediumturquoise; color: rebeccapurple; padding: 0 0.125em; }
+
+cite { font-style: normal; border-bottom: 0.1rem dotted mediumturquoise; }
+
+kbd, samp { font-family: monospace; background: mediumturquoise; padding: 0 0.125em; }
+
+small { text-transform: uppercase; letter-spacing: 0.01em; font-size: 0.85em; }
+
+u { border-bottom: 0.1rem dotted mediumturquoise; text-decoration: none; }
+
+/* Block Elements ~-----------------------------------------------~ */
+blockquote { margin: 1rem 0; padding: 0.6em 0; font-size: 1.125em; font-style: italic; border-top: 0.1rem dotted mediumturquoise; border-bottom: 0.1rem dotted mediumturquoise; }
+
+blockquote p + p { text-indent: 0; }
+
+/* Lists ~--------------------------------------------------------~ */
+ul, ol { margin: 1.6em 0; padding: 0; line-height: 1.6; }
+
+dl { margin: 1.6em 0; line-height: 1.6; }
+
+dl dt { display: inline; font-weight: 700; margin-left: -0.5em; }
+
+dl dd { display: inline; margin: 0; }
+
+dl dd:after { content: ""; display: block; }
+
+/* Links ~--------------------------------------------------------~ */
+a:link, a:visited { color: #155250; text-decoration: none; border-bottom: 0.125em dotted mediumturquoise; }
+
+a:hover, a:active, a:focus { border-bottom: 0.125em solid mediumturquoise; color: #155250; }
+
+/* Concept Highlighting ~-----------------------------------------~ */
+.language, .framework, .software, .productivity, .process, .skill, .technology, .trait, .passion { text-transform: uppercase; font-style: normal; color: rebeccapurple; }
+
+.language, .framework { font-family: monospace; font-size: 1.1em; letter-spacing: 0.0125em; color: #ddacac; background: rebeccapurple; border-radius: 0.125em; padding: 0.125em 0.25em; }
+
+.trait { color: #1a6663; }
+
+.passion { color: #bf6464; }
+
+/* Media Queries ~------------------------------------------------~ */
+@media (min-width: 48rem) { body { font-size: 1.125em; } }
+
+@media (min-width: 64rem) { body { font-size: 1.25em; }
+  #content { max-width: 42em; margin: 0 auto; } }
+
+/* Modules ~---------------------------------------------------------------~ */
+/* Header ~----------------------------------------------------------------------~ */
+.masthead { background: #a679d2; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr; padding: 15% 35%; align-items: center; justify-content: center; max-height: 65vw; box-sizing: border-box; }
+
+.masthead svg { max-width: 100%; max-height: 100%; }
+
+.masthead svg .icon { fill: #ddacac; }
+
+.masthead svg .type { fill: #0d0613; }
+
+.masthead h1 { font-size: 3rem; color: #e6d9f2; font-family: "Kaushan Script", cursive; }
+
+.masthead a:link { border-bottom: none; display: block; }
+
+@media (min-width: 64rem) { .masthead { padding: 3% 35%; } }
+
+/* Intro Section ~-----------------------------------------------------------------------~ */
+.intro { padding: 3em 15vw; }
+
+.intro .rule { width: 5vw; position: relative; display: block; margin: 2em auto 0; }
+
+.intro .rule svg .icon { fill: rebeccapurple; }
+
+.intro .rule:before, .intro .rule:after { position: absolute; top: calc(50% - 0.05em); width: 300%; content: "\a0"; height: 0.05em; background: rebeccapurple; }
+
+.intro .rule:before { margin-left: -300%; }
+
+.intro hgroup { font-size: 0.85em; }
+
+.intro hgroup h1 { color: rebeccapurple; margin-bottom: 0.25em; }
+
+.intro hgroup h2 { font-weight: 400; margin-top: 0.25em; }
+
+@media (min-width: 64rem) { .intro { padding: 5em 0; } }
+
+/* Portfolio ~-----------------------------------------------------------------------~ */
+.portfolio { margin: 0 0 3em; }
+
+.portfolio .category-name { text-align: center; margin: 2em 0 1em; }
+
+.portfolio a:link, .portfolio a:visited { border-bottom: none; }
+
+.portfolio-category { list-style: none; margin: 0; padding: 0 1em; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 1em; }
+
+.portfolio-item img { width: 100%; max-width: 100%; }
+
+@media (min-width: 64rem) { .portfolio-category { padding: 0; grid-template-columns: 1fr 1fr 1fr; } }
+
+/* Footer ~-------------------------------------------------------------------~ */
+#main-footer { background: #0d0613; color: white; padding: 1em; }
+
+#main-footer dl { display: grid; grid-template-columns: 0.6fr 1.6fr; grid-gap: 1em; padding: 1em; }
+
+#main-footer dl dt { place-self: end; align-self: end; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85em; }
+
+#main-footer dl dd { margin: 0; padding: 0; }
+
+#main-footer dl a:link, #main-footer dl a:visited { color: mediumturquoise; transition: color 350ms; text-decoration: none; border-bottom: 0.0125em solid transparent; }
+
+#main-footer dl a:hover, #main-footer dl a:active, #main-footer dl a:focus { color: #aeebe8; border-bottom-color: rebeccapurple; }
+
+/* Articles ~---------------------------------------------------------------~ */
+.article { padding: 5vh 15vw; }
+
+.article img { max-width: 100%; text-indent: 0; margin: 1.6em 0 1.6em; }
+
+@media (min-width: 64rem) { .article { padding: 5em 0; } }
+
+/* Page ~------------------------------------------------------------------------~ */
+.page { padding: 5vh 15vw; }
+
+@media (min-width: 64rem) { .page { padding: 5em 0; } }
+
+/*  @import "article"; @import "logo"; @import "triggers"; @import "nav"; @import "recent"; @import "pagination"; */
+/* Layouts ~--------------------------------------------------------------~ */
+/* Articles ~---------------------------------------------------------------~ */
+.article { padding: 5vh 15vw; }
+
+.article img { max-width: 100%; text-indent: 0; margin: 1.6em 0 1.6em; }
+
+@media (min-width: 64rem) { .article { padding: 5em 0; } }
+
+/* Resume ~-----------------------------------------------------------------------~ */
+.resume .section { font-size: 2em; }
+
+.resume .skills { font-size: 1.25em; }
+
+.resume .date-range { font-size: 0.85em; margin: 3.2em 0 0.6em; }
+
+.resume .job-title { font-size: 1em; margin: 0.6em 0; }
+
+.resume .job-title em { font-weight: 400; }
+
+.resume .responsibilities { font-size: 0.85em; }
+
+.resume ul { list-style: none; margin: 0.6em 0; }
+
+.resume ul li { text-indent: -0.5em; }
+
+.resume ul li:before { content: '\203a'; position: relative; left: -0.5em; }
+
+.resume ul ul { padding-left: 1.6em; }
+
+.resume ul ul li:before { content: '\2212'; }
+
+/* @import "home"; @import "about"; */
+
+/*# sourceMappingURL=jenny.min.css.map */

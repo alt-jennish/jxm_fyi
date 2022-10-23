@@ -1,0 +1,28 @@
+/* Base Styles
+  ~-----------------------------------------------------------------------~ */
+
+body, html {
+    background: $teto;
+    color: $thejungle;
+    font-size: 1em;
+    font-family: "Alegreya", serif;
+}
+
+body {
+    max-width: 35rem;
+    box-sizing: border-box;
+    margin: 2em 6vw 1em;
+    padding: 1em;
+}
+
+::selection {
+    background: $insects;
+    color: $desert;
+
+}
+
+::-moz-selection {
+    background: $insects;
+    color: $desert;
+}
+
